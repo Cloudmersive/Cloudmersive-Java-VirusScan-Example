@@ -19,7 +19,7 @@
         <dependency>
             <groupId>com.github.Cloudmersive</groupId>
             <artifactId>Cloudmersive.APIClient.Java</artifactId>
-            <version>v3.62</version>
+            <version>v3.79</version>
         </dependency>
     </dependencies>
     
