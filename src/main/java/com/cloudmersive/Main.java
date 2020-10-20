@@ -21,7 +21,7 @@ public class Main {
 
             // Configure API key authorization: Apikey
             ApiKeyAuth Apikey = (ApiKeyAuth) defaultClient.getAuthentication("Apikey");
-            Apikey.setApiKey("f0c513bc-8c00-4491-830e-3e83b015feb6");
+            Apikey.setApiKey("8e8bd951-efad-4409-b5af-1df32718cb00");
 
             
             ScanApi apiInstance = new ScanApi();
