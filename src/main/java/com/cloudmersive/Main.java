@@ -16,15 +16,7 @@ public class Main {
         client.setWriteTimeout(300000);
         client.setConnectTimeout(300000);
 
-//        ApiKeyAuth auth = (ApiKeyAuth)client.getAuthentication("key");
-//        auth.setApiKey("14343416-776b-40e8-b6d7-6ffaa0bd70f9");
 
-//        ApiKeyAuth auth = new ApiKeyAuth("header", "Apikey");
-//        auth.setApiKey("14343416-776b-40e8-b6d7-6ffaa0bd70f9");
-//
-//        client.getAuthentications().put("Apikey", auth);
-
-        //client.setApiKey("14343416-776b-40e8-b6d7-6ffaa0bd70f9");
 
 
 
@@ -40,16 +32,13 @@ public class Main {
             Apikey.setApiKey("f0c513bc-8c00-4491-830e-3e83b015feb6");
 
             
-            MergeDocumentApi apiInstance = new MergeDocumentApi();
-            File inputFile1 = new File("./pdf1.pdf"); // File | First input file to perform the operation on.
-            File inputFile2 = new File("./pdf2.pdf"); // File | Second input file to perform the operation on.
-            File inputFile3 = new File("./pdf3.pdf"); // File | Third input file to perform the operation on.
-
+            ScanApi apiInstance = new ScanApi();
+            File inputFile = new File("./pdf1.pdf"); // File | Input file to perform the operation on.
             try {
-                byte[] result = apiInstance.mergeDocumentPdfMulti(inputFile1, inputFile2, inputFile3);
+                VirusScanResult result = apiInstance.scanFile(inputFile);
                 System.out.println(result);
             } catch (ApiException e) {
-                System.err.println("Exception when calling MergeDocumentApi#mergeDocumentPdfMulti");
+                System.err.println("Exception when calling ScanApi#scanFile");
                 e.printStackTrace();
             }
 
