@@ -33,7 +33,7 @@ public class Main {
 
             
             ScanApi apiInstance = new ScanApi();
-            File inputFile = new File("./pdf1.pdf"); // File | Input file to perform the operation on.
+            File inputFile = new File("C:\\Users\\Administrator\\Documents\\GitHub\\Cloudmersive-Java-VirusScan-Example\\pdf1.pdf"); // File | Input file to perform the operation on.
             try {
                 VirusScanResult result = apiInstance.scanFile(inputFile);
                 System.out.println(result);
