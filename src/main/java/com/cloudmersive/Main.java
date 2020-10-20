@@ -9,14 +9,6 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) {
-        ApiClient client = new ApiClient();
-        client.addDefaultHeader("Apikey", "14343416-776b-40e8-b6d7-6ffaa0bd70f9");
-
-        client.setReadTimeout(300000);
-        client.setWriteTimeout(300000);
-        client.setConnectTimeout(300000);
-
-
 
 
 
